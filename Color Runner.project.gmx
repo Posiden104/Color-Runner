@@ -3,41 +3,64 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
-  <NewExtensions/>
+  <NewExtensions>
+    <extension index="0">extensions\Essential Scripts</extension>
+    <extension index="1">extensions\Easy Mobile Controls</extension>
+  </NewExtensions>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\spr_player</sprite>
-    <sprite>sprites\spr_wall</sprite>
-    <sprite>sprites\spr_red</sprite>
-    <sprite>sprites\spr_blue</sprite>
-    <sprite>sprites\spr_green</sprite>
-    <sprite>sprites\spr_indicator</sprite>
+    <sprites name="Player">
+      <sprite>sprites\spr_indicator</sprite>
+      <sprite>sprites\spr_player</sprite>
+    </sprites>
+    <sprites name="Wall Spr">
+      <sprite>sprites\spr_green</sprite>
+      <sprite>sprites\spr_red</sprite>
+      <sprite>sprites\spr_blue</sprite>
+      <sprite>sprites\spr_wall</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\background1</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
-    <script>scripts\scr_blue_state.gml</script>
-    <script>scripts\scr_red_state.gml</script>
-    <script>scripts\scr_get_input.gml</script>
-    <script>scripts\scr_green_state.gml</script>
-    <script>scripts\scr_menu_state.gml</script>
-    <script>scripts\scr_gameOver_menu.gml</script>
-    <script>scripts\scr_check_collision.gml</script>
+    <scripts name="Menu &amp; Util">
+      <script>scripts\scr_get_input.gml</script>
+      <script>scripts\scr_check_collision.gml</script>
+      <script>scripts\scr_menu_state.gml</script>
+      <script>scripts\scr_gameOver_menu.gml</script>
+      <script>scripts\scr_change_color.gml</script>
+    </scripts>
+    <scripts name="Wall Scr">
+      <script>scripts\scr_blue_state.gml</script>
+      <script>scripts\scr_red_state.gml</script>
+      <script>scripts\scr_green_state.gml</script>
+    </scripts>
+    <scripts name="Essential Scripts">
+      <scripts name="Chance Functions">
+        <script>scripts\percent_chance.gml</script>
+      </scripts>
+    </scripts>
   </scripts>
   <objects name="objects">
-    <object>objects\obj_wall</object>
-    <object>objects\obj_red_wall</object>
-    <object>objects\obj_blue_wall</object>
-    <object>objects\obj_indicator</object>
-    <object>objects\obj_player</object>
-    <object>objects\obj_green_wall</object>
-    <object>objects\obj_wall_parent</object>
-    <object>objects\obj_camera</object>
-    <object>objects\obj_gameOver</object>
-    <object>objects\obj_instructions</object>
-    <object>objects\obj_score</object>
+    <objects name="Helper Obj">
+      <object>objects\obj_gameOver</object>
+      <object>objects\obj_instructions</object>
+      <object>objects\obj_score</object>
+      <object>objects\obj_gen</object>
+      <object>objects\obj_indicator</object>
+    </objects>
+    <objects name="Walls">
+      <object>objects\obj_wall_parent</object>
+      <object>objects\obj_blue_wall</object>
+      <object>objects\obj_red_wall</object>
+      <object>objects\obj_green_wall</object>
+      <object>objects\obj_wall</object>
+    </objects>
+    <objects name="Player Obj">
+      <object>objects\obj_player</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_start</room>

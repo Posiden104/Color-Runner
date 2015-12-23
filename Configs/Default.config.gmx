@@ -457,7 +457,8 @@
     <option_xbone_title_id></option_xbone_title_id>
   </Options>
   <ConfigConstants>
-    <constants number="1">
+    <constants number="2">
+      <constant name="WALL_WIDTH">5</constant>
       <constant name="SPEED">6</constant>
     </constants>
   </ConfigConstants>

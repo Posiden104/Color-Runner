@@ -25,8 +25,11 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Set speed
-hspeed = - SPEED;
+            <string>///Init
+place_x = 1216;
+place_y = 32;
+steps = -1;
+color = obj_blue_wall;
 </string>
           </argument>
         </arguments>
@@ -49,9 +52,23 @@ hspeed = - SPEED;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Destory if x &lt; -1000
-if(x &lt; -1000)
-    instance_destroy();
+            <string>///Generate Walls
+steps += 1;
+
+var inst;
+
+if(steps &gt;= WALL_WIDTH) {
+    steps = 0;
+    inst = instance_create(place_x, place_y, color);
+       
+    if(percent_chance(25)) {
+        //color = choose(obj_blue_wall, obj_red_wall, obj_green_wall);
+        color = scr_change_color(color);
+        steps = -random_range(16, 30);
+        
+        show_debug_message(string(steps));
+    }
+}
 </string>
           </argument>
         </arguments>
