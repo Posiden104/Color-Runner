@@ -107,7 +107,7 @@ jumpable = true;
           <argument>
             <kind>1</kind>
             <string>///Step event
-//vspeed += 0.6;
+vspeed += 0.6;
 scr_get_input();
 script_execute(state);
 
@@ -134,7 +134,7 @@ if(switch_key &amp;&amp; switchable){
     alarm[1] = 5;
 }
 
-//scr_check_collision();
+scr_check_collision();
 
 obj_score.my_score += 0.03;
 </string>

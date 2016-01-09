@@ -66,7 +66,7 @@ if(steps &gt;= WALL_WIDTH) {
         color = scr_change_color(color);
         steps = -random_range(16, 30);
         
-        show_debug_message(string(steps));
+        //show_debug_message(string(steps));
     }
 }
 </string>
