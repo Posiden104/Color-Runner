@@ -2,7 +2,7 @@
 
 jump_key = keyboard_check(vk_space);
 switch_key = keyboard_check(vk_shift);
-escape_key = keyboard_check(vk_escape);
+escape_key = keyboard_check(vk_backspace);
 
 /*
 var message = gamepad_is_supported();

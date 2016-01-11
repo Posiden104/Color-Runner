@@ -3,7 +3,7 @@
   <spriteName>spr_player</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-100</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -33,6 +33,7 @@ jump_key = 0;
 jumpable = true;
 switch_key = 0;
 switchable = true;
+running = false;
 obj_score.my_score = 0;
 scr_get_input();
 script_execute(state);
@@ -107,12 +108,14 @@ jumpable = true;
           <argument>
             <kind>1</kind>
             <string>///Step event
-vspeed += 0.6;
+if(!running) vspeed += 0.6;
+
 scr_get_input();
 script_execute(state);
 
 if(jump_key &amp;&amp; jumpable){
     vspeed = -8;
+    running = false;
     jumpable = false;
     alarm[0] = 10;
 }
@@ -136,7 +139,7 @@ if(switch_key &amp;&amp; switchable){
 
 scr_check_collision();
 
-obj_score.my_score += 0.03;
+//obj_score.my_score += 0.03;
 </string>
           </argument>
         </arguments>

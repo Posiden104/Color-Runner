@@ -12,6 +12,7 @@
     <sprites name="Player">
       <sprite>sprites\spr_indicator</sprite>
       <sprite>sprites\spr_player</sprite>
+      <sprite>sprites\spr_coin</sprite>
     </sprites>
     <sprites name="Wall Spr">
       <sprite>sprites\spr_green</sprite>
@@ -43,6 +44,9 @@
       </scripts>
     </scripts>
   </scripts>
+  <fonts name="fonts">
+    <font>fonts\font0</font>
+  </fonts>
   <objects name="objects">
     <objects name="Helper Obj">
       <object>objects\obj_gameOver</object>
@@ -52,14 +56,16 @@
       <object>objects\obj_indicator</object>
     </objects>
     <objects name="Walls">
-      <object>objects\obj_wall_parent</object>
+      <object>objects\obj_coll_parent</object>
       <object>objects\obj_blue_wall</object>
       <object>objects\obj_red_wall</object>
       <object>objects\obj_green_wall</object>
-      <object>objects\obj_wall</object>
+      <object>objects\obj_ceiling</object>
+      <object>objects\obj_floor</object>
     </objects>
     <objects name="Player Obj">
       <object>objects\obj_player</object>
+      <object>objects\obj_coin</object>
     </objects>
   </objects>
   <rooms name="rooms">

@@ -28,8 +28,8 @@
             <string>///Init
 txt_x = room_width / 2;
 txt_y = room_height / 2 - 100;
-msg_instructions = "Press &lt;SPACE&gt; to jump#Press &lt;SHIFT&gt; to change color";
-msg_enter = "Press &lt;ENTER&gt; to Start";
+msg_instructions = "Tap the LEFT to jump#Tap the RIGHT to change color";
+msg_enter = "TAP to Start";
 pressable = false;
 alarm[0] = 10;
 </string>
@@ -87,22 +87,6 @@ if(device_mouse_check_button(0, mb_left) &amp;&amp; pressable) {
         </arguments>
       </action>
     </event>
-    <event eventtype="5" enumb="27">
-      <action>
-        <libid>1</libid>
-        <id>332</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_end_game</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-      </action>
-    </event>
     <event eventtype="5" enumb="13">
       <action>
         <libid>1</libid>
@@ -127,6 +111,22 @@ room_goto(rm_game);
         </arguments>
       </action>
     </event>
+    <event eventtype="5" enumb="8">
+      <action>
+        <libid>1</libid>
+        <id>332</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_end_game</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+      </action>
+    </event>
     <event eventtype="8" enumb="0">
       <action>
         <libid>1</libid>
@@ -147,6 +147,8 @@ room_goto(rm_game);
             <string>///Draw the stuff
 draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
+
+draw_set_font(font0);
 
 draw_text_transformed(txt_x, txt_y - 32, "Welcome to#COLOR JUMPER!", 2, 2, 0);
 draw_text_transformed(txt_x, txt_y + 96, msg_enter, 1.5, 1.5, 0);

@@ -28,8 +28,10 @@
             <string>///Init
 place_x = 1216;
 place_y = 32;
-steps = -1;
+coin_y = 192
+steps = 4;
 color = obj_blue_wall;
+isFirst = true;
 </string>
           </argument>
         </arguments>
@@ -61,13 +63,28 @@ if(steps &gt;= WALL_WIDTH) {
     steps = 0;
     inst = instance_create(place_x, place_y, color);
        
-    if(percent_chance(25)) {
+    if(!isFirst) {
         //color = choose(obj_blue_wall, obj_red_wall, obj_green_wall);
         color = scr_change_color(color);
-        steps = -random_range(16, 30);
+        
+        //16 steps creates 3 space gap
+        //steps = -random_range(16, 30);
+        steps = -15;
+        
+        place_y = choose(32, 96, 160, 224, 288, -32);
+        
+        isFirst = true;
         
         //show_debug_message(string(steps));
+    } else {
+        isFirst = false;
     }
+}
+
+if(steps == -5) {
+    coin_y = random_range(64, 288);
+    
+    inst = instance_create(place_x, coin_y, obj_coin);
 }
 </string>
           </argument>

@@ -33,7 +33,7 @@ txt_x = room_width / 2;
 txt_y = room_height / 2;
 msg_score = "Score: " + string(round(obj_score.my_score));
 msg_high = "High Score: " + string(round(obj_score.my_high_score));
-msg_enter = "Press &lt;ENTER&gt; to try again";
+msg_enter = "TAP to try again";
 pressable = false;
 alarm[0] = 100;
 </string>
@@ -91,22 +91,6 @@ if(device_mouse_check_button(0, mb_left) &amp;&amp; pressable) {
         </arguments>
       </action>
     </event>
-    <event eventtype="5" enumb="27">
-      <action>
-        <libid>1</libid>
-        <id>332</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_end_game</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-      </action>
-    </event>
     <event eventtype="5" enumb="13">
       <action>
         <libid>1</libid>
@@ -131,6 +115,22 @@ room_goto(rm_game);
         </arguments>
       </action>
     </event>
+    <event eventtype="5" enumb="8">
+      <action>
+        <libid>1</libid>
+        <id>332</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_end_game</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+      </action>
+    </event>
     <event eventtype="8" enumb="0">
       <action>
         <libid>1</libid>
@@ -151,6 +151,8 @@ room_goto(rm_game);
             <string>///Draw the stuff
 draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
+
+draw_set_font(font0);
 
 draw_text_transformed(txt_x, txt_y - 32, "GAME OVER!", 2, 2, 0);
 draw_text_transformed(txt_x, txt_y + 64, msg_score, 1.5, 1.5, 0);
