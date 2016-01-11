@@ -25,10 +25,11 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Set speed
+            <string>///Init
 hspeed = -SPEED;
 isFloor = false;
 isCoin = false;
+touched = false;
 </string>
           </argument>
         </arguments>

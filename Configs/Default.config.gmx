@@ -458,7 +458,7 @@
   </Options>
   <ConfigConstants>
     <constants number="2">
-      <constant name="WALL_WIDTH">5</constant>
+      <constant name="WALL_WIDTH">10</constant>
       <constant name="SPEED">6</constant>
     </constants>
   </ConfigConstants>

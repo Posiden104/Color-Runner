@@ -35,6 +35,7 @@
     </scripts>
     <scripts name="Wall Scr">
       <script>scripts\scr_blue_state.gml</script>
+      <script>scripts\scr_debug.gml</script>
       <script>scripts\scr_red_state.gml</script>
       <script>scripts\scr_green_state.gml</script>
     </scripts>

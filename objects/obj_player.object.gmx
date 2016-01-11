@@ -28,9 +28,11 @@
             <string>///Init
 depth = -100;
 //hspeed = SPEED;
-state = scr_blue_state;
+//state = scr_blue_state;
+state = scr_debug;
 jump_key = 0;
 jumpable = true;
+jump = 0;
 switch_key = 0;
 switchable = true;
 running = false;
@@ -113,11 +115,12 @@ if(!running) vspeed += 0.6;
 scr_get_input();
 script_execute(state);
 
-if(jump_key &amp;&amp; jumpable){
+if(jump_key &amp;&amp; jumpable &amp;&amp; jump &lt; 2){
     vspeed = -8;
     running = false;
     jumpable = false;
     alarm[0] = 10;
+    jump ++;
 }
 
 if(switch_key &amp;&amp; switchable){
@@ -138,6 +141,8 @@ if(switch_key &amp;&amp; switchable){
 }
 
 scr_check_collision();
+
+
 
 //obj_score.my_score += 0.03;
 </string>
@@ -162,10 +167,11 @@ scr_check_collision();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Draw Score
+            <string>///Draw Text
 var msg = "Score: " + string(round(obj_score.my_score));
 draw_set_color(c_white);
 draw_text(view_xview[0] + 64, view_yview[0] + 15, msg);
+draw_text(view_xview[0] + 64, view_yview[0] + 30, "Jumps" + string(jump));
 draw_self();
 </string>
           </argument>
