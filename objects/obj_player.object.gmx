@@ -28,17 +28,22 @@
             <string>///Init
 depth = -100;
 //hspeed = SPEED;
-//state = scr_blue_state;
-state = scr_debug;
+if(obj_score.isHardMode){
+    state = scr_blue_state;
+} else {
+    state = scr_debug;
+}
 jump_key = 0;
-jumpable = true;
+jumpable = false;
 jump = 0;
 switch_key = 0;
-switchable = true;
+switchable = false;
 running = false;
 obj_score.my_score = 0;
 scr_get_input();
 script_execute(state);
+alarm[0] = 3;
+alarm[1] = 3
 </string>
           </argument>
         </arguments>
@@ -111,6 +116,7 @@ jumpable = true;
             <kind>1</kind>
             <string>///Step event
 if(!running) vspeed += 0.6;
+if(running) y = 323;
 
 scr_get_input();
 script_execute(state);
@@ -142,7 +148,7 @@ if(switch_key &amp;&amp; switchable){
 
 scr_check_collision();
 
-
+if(running) y = 323;
 
 //obj_score.my_score += 0.03;
 </string>

@@ -7,6 +7,7 @@ if(inst.isFloor) {
     running = true;
     vspeed = 0;
     jump = 0;
+    if(running) y = 323;
     exit;
 } else if(inst.solid) {
     state = scr_gameOver_menu;
@@ -20,6 +21,7 @@ if(inst.isFloor) {
     jump--;
     if(jump < 0) jump = 0;
     inst.touched = true;
+    if(running) y = 323;
 }
 
 if(running) y = 323;

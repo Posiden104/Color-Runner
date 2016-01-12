@@ -10,15 +10,20 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprites name="Player">
-      <sprite>sprites\spr_indicator</sprite>
       <sprite>sprites\spr_player</sprite>
-      <sprite>sprites\spr_coin</sprite>
     </sprites>
     <sprites name="Wall Spr">
       <sprite>sprites\spr_green</sprite>
       <sprite>sprites\spr_red</sprite>
       <sprite>sprites\spr_blue</sprite>
       <sprite>sprites\spr_wall</sprite>
+    </sprites>
+    <sprites name="Other">
+      <sprite>sprites\spr_indicator</sprite>
+      <sprite>sprites\spr_coin</sprite>
+      <sprite>sprites\spr_hard</sprite>
+      <sprite>sprites\spr_start</sprite>
+      <sprite>sprites\spr_easy</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -55,6 +60,10 @@
       <object>objects\obj_score</object>
       <object>objects\obj_gen</object>
       <object>objects\obj_indicator</object>
+      <object>objects\obj_btn_parent</object>
+      <object>objects\obj_hard_btn</object>
+      <object>objects\obj_easy_btn</object>
+      <object>objects\obj_start_btn</object>
     </objects>
     <objects name="Walls">
       <object>objects\obj_coll_parent</object>
