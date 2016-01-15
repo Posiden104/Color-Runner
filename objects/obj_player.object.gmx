@@ -123,7 +123,7 @@ scr_get_input();
 script_execute(state);
 
 if(jump_key &amp;&amp; jumpable &amp;&amp; jump &lt; 2){
-    vspeed = -8;
+    vspeed = -9;
     running = false;
     jumpable = false;
     alarm[0] = 10;
