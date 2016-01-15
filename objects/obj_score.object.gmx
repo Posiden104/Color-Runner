@@ -56,10 +56,11 @@ isHardMode = false;
           <argument>
             <kind>1</kind>
             <string>///Incriment score
-if(isHardMode){
+if(!isHardMode){
     if(my_score &gt; my_high_score) {
         my_high_score = my_score;
     }
+} else {
     if(my_score &gt; my_hard_score) {
         my_hard_score = my_score;
     }

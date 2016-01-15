@@ -32,7 +32,7 @@ place_y = 32;
 coin_y = 192
 steps = 4;
 color = obj_blue_wall;
-script_execute(scr_gen_enum);
+//script_execute(scr_gen_enum);
 </string>
           </argument>
         </arguments>
