@@ -33,10 +33,15 @@
   <scripts name="scripts">
     <scripts name="Menu &amp; Util">
       <script>scripts\scr_get_input.gml</script>
+      <script>scripts\scr_next_color.gml</script>
       <script>scripts\scr_check_collision.gml</script>
       <script>scripts\scr_menu_state.gml</script>
       <script>scripts\scr_gameOver_menu.gml</script>
+    </scripts>
+    <scripts name="Gen scripts">
       <script>scripts\scr_change_color.gml</script>
+      <script>scripts\scr_gen_walls.gml</script>
+      <script>scripts\scr_gen_enum.gml</script>
     </scripts>
     <scripts name="Wall Scr">
       <script>scripts\scr_blue_state.gml</script>

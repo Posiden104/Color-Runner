@@ -26,11 +26,13 @@
           <argument>
             <kind>1</kind>
             <string>///Init
-place_x = 1120;
+//place_x = 1120;
+place_x = 704;
 place_y = 32;
 coin_y = 192
 steps = 4;
 color = obj_blue_wall;
+script_execute(scr_gen_enum);
 </string>
           </argument>
         </arguments>
@@ -60,17 +62,7 @@ var inst;
 
 if(steps &gt;= WALL_WIDTH) {
     steps = 0;
-    inst = instance_create(place_x, place_y, color);
-   
-    //color = choose(obj_blue_wall, obj_red_wall, obj_green_wall);
-    color = scr_change_color(color);
-    
-    //steps = -random_range(16, 30);
-    steps = -1.5 * WALL_WIDTH;
-    
-    place_y = choose(32, 96, 160, 224, 288, -32);
-    
-    //show_debug_message(string(steps));
+    script_execute(scr_gen_walls);
 }
 
 if(steps == round(.10 * WALL_WIDTH)) {

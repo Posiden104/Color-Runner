@@ -31,7 +31,8 @@ depth = -100;
 if(obj_score.isHardMode){
     state = scr_blue_state;
 } else {
-    state = scr_debug;
+    //state = scr_debug;
+    state = scr_blue_state;
 }
 jump_key = 0;
 jumpable = false;
@@ -130,17 +131,7 @@ if(jump_key &amp;&amp; jumpable &amp;&amp; jump &lt; 2){
 }
 
 if(switch_key &amp;&amp; switchable){
-    switch(state){
-    case scr_blue_state:
-        state = scr_red_state;
-        break;
-    case scr_red_state:
-        state = scr_green_state;
-        break;
-    case scr_green_state:
-        state = scr_blue_state;
-        break;
-    }
+    script_execute(scr_next_color);
     script_execute(state);
     switchable = false;
     alarm[1] = 5;
