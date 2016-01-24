@@ -25,57 +25,16 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Init
+            <string>///init
 txt_x = room_width / 2;
 txt_y = room_height / 2 - 100;
-msg_instructions = "HARD MODE: 3 wall colors";
-msg_easy_ins = "EASY MODE: 2 wall colors";
-msg_enter = "TAP Start";
-pressable = false;
-alarm[0] = 10;
+msg_1 = "Tap the LEFT to jump#Tap the RIGHT to change color";
+msg_2 = "You can only pass through a wall if you are the same color";
+msg_3 = "You can jump twice. Passing through a wall will reset your jumps";
+instance_place(100, 100, obj_btn);
 </string>
           </argument>
         </arguments>
-      </action>
-    </event>
-    <event eventtype="2" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>/// pressable
-pressable = true;
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="5" enumb="8">
-      <action>
-        <libid>1</libid>
-        <id>332</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_end_game</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
       </action>
     </event>
     <event eventtype="8" enumb="0">
@@ -101,14 +60,10 @@ draw_set_valign(fa_middle);
 
 draw_set_font(fnt_1);
 
-draw_text_transformed(txt_x, txt_y - 32, "Welcome to#COLOR JUMPER!", 1, 1, 0);
-draw_text_transformed(txt_x, txt_y + 96, msg_enter, .75, .75, 0);
+draw_text_transformed(txt_x, txt_y, msg_1, .75, .75, 0);
+draw_text_transformed(txt_x, txt_y + 64, msg_2, .75, .75, 0);
+draw_text_transformed(txt_x, txt_y + 128, msg_3, .75, .75, 0);
 
-if(obj_score.isHardMode) {
-    draw_text_transformed(txt_x, txt_y + 128, msg_instructions, .5, .5, 0);
-} else {
-    draw_text_transformed(txt_x, txt_y + 128, msg_easy_ins, .5, .5, 0);
-}
 </string>
           </argument>
         </arguments>

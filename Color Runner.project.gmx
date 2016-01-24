@@ -21,9 +21,13 @@
     <sprites name="Other">
       <sprite>sprites\spr_indicator</sprite>
       <sprite>sprites\spr_coin</sprite>
+    </sprites>
+    <sprites name="Buttons">
+      <sprite>sprites\spr_btn</sprite>
       <sprite>sprites\spr_hard</sprite>
-      <sprite>sprites\spr_start</sprite>
       <sprite>sprites\spr_easy</sprite>
+      <sprite>sprites\spr_HTP</sprite>
+      <sprite>sprites\spr_start</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -56,19 +60,16 @@
     </scripts>
   </scripts>
   <fonts name="fonts">
-    <font>fonts\font0</font>
+    <font>fonts\fnt_1</font>
   </fonts>
   <objects name="objects">
     <objects name="Helper Obj">
+      <object>objects\obj_HTP</object>
       <object>objects\obj_gameOver</object>
       <object>objects\obj_instructions</object>
       <object>objects\obj_score</object>
       <object>objects\obj_gen</object>
       <object>objects\obj_indicator</object>
-      <object>objects\obj_btn_parent</object>
-      <object>objects\obj_hard_btn</object>
-      <object>objects\obj_easy_btn</object>
-      <object>objects\obj_start_btn</object>
     </objects>
     <objects name="Walls">
       <object>objects\obj_coll_parent</object>
@@ -82,11 +83,20 @@
       <object>objects\obj_player</object>
       <object>objects\obj_coin</object>
     </objects>
+    <objects name="Buttons">
+      <object>objects\obj_btn</object>
+      <object>objects\obj_HTP_btn</object>
+      <object>objects\obj_start_btn</object>
+      <object>objects\obj_easy_btn</object>
+      <object>objects\obj_hard_btn</object>
+      <object>objects\obj_btn_parent</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_start</room>
     <room>rooms\rm_game</room>
     <room>rooms\rm_gameOver</room>
+    <room>rooms\rm_HTP</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
