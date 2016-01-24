@@ -3,8 +3,8 @@
   <caption></caption>
   <width>683</width>
   <height>384</height>
-  <vsnap>32</vsnap>
-  <hsnap>32</hsnap>
+  <vsnap>1</vsnap>
+  <hsnap>1</hsnap>
   <isometric>0</isometric>
   <speed>30</speed>
   <persistent>0</persistent>
@@ -53,11 +53,13 @@
   <instances>
     <instance objName="obj_score" x="0" y="64" name="inst_2286CF37" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_instructions" x="0" y="96" name="inst_141CFFD8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_btn" x="354" y="300" name="inst_6E5BA9E1" locked="-1" code="text = &quot;Start&quot;;&#xA;target = rm_game;&#xA;xscale *= 2;&#xA;yscale *= 2;&#xA;" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="obj_btn" x="70" y="300" name="inst_52BB3A02" locked="-1" code="text = &quot;Hard Mode&quot;;&#xA;tgt = scr_hard;&#xA;xscale *= 0.9;&#xA;yscale *= 0.9;&#xA;" scaleX="1.20000004768372" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_btn" x="154" y="300" name="inst_127CAF81" locked="-1" code="text = &quot;Easy Mode&quot;;&#xA;tgt = scr_easy;&#xA;xscale *= 0.9;&#xA;yscale *= 0.9;&#xA;" scaleX="1.20000004768372" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_btn" x="600" y="300" name="inst_B1EFE0C8" locked="-1" code="text = &quot;How to Play&quot;&#xA;target = rm_HTP;&#xA;xscale *= 1.2;&#xA;yscale *= 1.2;&#xA;" scaleX="1.75" scaleY="1.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_floor" x="0" y="352" name="inst_A2A464B1" locked="-1" code="" scaleX="22" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ceiling" x="0" y="0" name="inst_A49770B1" locked="-1" code="" scaleX="22" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_gen" x="0" y="128" name="inst_572AD5DA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_menu" x="6" y="36" name="inst_F6651EE0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_ceiling" x="0" y="0" name="inst_1A1561DA" locked="0" code="" scaleX="24" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_floor" x="0" y="352" name="inst_14772135" locked="0" code="" scaleX="24" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_HTP" x="0" y="160" name="inst_35AEA204" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

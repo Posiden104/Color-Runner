@@ -4,7 +4,7 @@
   <solid>0</solid>
   <visible>-1</visible>
   <depth>0</depth>
-  <persistent>0</persistent>
+  <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
@@ -29,9 +29,8 @@
 txt_x = room_width / 2;
 txt_y = room_height / 2 - 100;
 msg_1 = "Tap the LEFT to jump#Tap the RIGHT to change color";
-msg_2 = "You can only pass through a wall if you are the same color";
-msg_3 = "You can jump twice. Passing through a wall will reset your jumps";
-instance_place(100, 100, obj_btn);
+msg_2 = "You can only pass through a wall#if you are the same color";
+msg_3 = "You can jump twice. Passing through#a wall will reset your jumps";
 </string>
           </argument>
         </arguments>
@@ -59,6 +58,7 @@ draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
 
 draw_set_font(fnt_1);
+draw_set_color(c_white);
 
 draw_text_transformed(txt_x, txt_y, msg_1, .75, .75, 0);
 draw_text_transformed(txt_x, txt_y + 64, msg_2, .75, .75, 0);

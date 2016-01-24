@@ -52,9 +52,10 @@
   </views>
   <instances>
     <instance objName="obj_gameOver" x="224" y="192" name="inst_66FD91EA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_start_btn" x="346" y="286" name="inst_2A806B99" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
-    <instance objName="obj_hard_btn" x="124" y="321" name="inst_EBE2E884" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_easy_btn" x="560" y="321" name="inst_174A37A3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_btn" x="70" y="300" name="inst_E56CADA0" locked="-1" code="text = &quot;Hard Mode&quot;;&#xA;tgt = scr_hard;&#xA;xscale *= 0.9;&#xA;yscale *= 0.9;&#xA;" scaleX="1.20000004768372" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_btn" x="154" y="300" name="inst_33FC269B" locked="-1" code="text = &quot;Easy Mode&quot;;&#xA;tgt = scr_easy;&#xA;xscale *= 0.9;&#xA;yscale *= 0.9;&#xA;" scaleX="1.20000004768372" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_btn" x="354" y="300" name="inst_B19698B8" locked="-1" code="text = &quot;Start&quot;;&#xA;target = rm_game;&#xA;xscale *= 2;&#xA;yscale *= 2;&#xA;" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="obj_btn" x="600" y="300" name="inst_7BFF01AE" locked="-1" code="text = &quot;How to Play&quot;&#xA;target = rm_HTP;&#xA;xscale *= 1.2;&#xA;yscale *= 1.2;&#xA;" scaleX="1.75" scaleY="1.5" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

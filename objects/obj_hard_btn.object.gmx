@@ -26,7 +26,6 @@
           <argument>
             <kind>1</kind>
             <string>/// Set game to Hard Mode
-obj_score.isHardMode = true;
 </string>
           </argument>
         </arguments>

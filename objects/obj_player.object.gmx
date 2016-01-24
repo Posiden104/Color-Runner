@@ -3,7 +3,7 @@
   <spriteName>spr_player</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>-100</depth>
+  <depth>-20</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -40,6 +40,7 @@ jump = 0;
 switch_key = 0;
 switchable = false;
 running = false;
+isDead = false;
 obj_score.my_score = 0;
 scr_get_input();
 script_execute(state);
@@ -165,10 +166,13 @@ if(running) y = 323;
           <argument>
             <kind>1</kind>
             <string>///Draw Text
-var msg = "Score: " + string(round(obj_score.my_score));
-draw_set_color(c_white);
-draw_text(view_xview[0] + 64, view_yview[0] + 15, msg);
-draw_text(view_xview[0] + 64, view_yview[0] + 30, "Jumps" + string(jump));
+if(!isDead){
+    var msg = "Score: " + string(round(obj_score.my_score));
+    draw_set_color(c_white);
+
+    draw_text(view_xview[0] + 64, view_yview[0] + 15, msg);
+    draw_text(view_xview[0] + 64, view_yview[0] + 30, "Jumps" + string(jump));
+}
 draw_self();
 </string>
           </argument>
