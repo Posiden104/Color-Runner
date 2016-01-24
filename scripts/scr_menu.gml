@@ -12,6 +12,6 @@ with(obj_menu){
     instance_activate_object(inst_HTP);
     
     instance_deactivate_object(inst_back);
-    instance_deactivate_object(inst_play);
+    //instance_deactivate_object(inst_play);
 }
 instance_deactivate_object(obj_HTP);

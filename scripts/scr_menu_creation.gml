@@ -39,11 +39,13 @@ with(inst_back){
     text = "Back";
     tgt = scr_menu;
 }
-
+/*
 inst_play = instance_create(450, 300, obj_btn);
 with(inst_play) {
     text = "Start";
     target = rm_game;
+    tgt = scr_game;
 }
+*/
 instance_deactivate_object(inst_back);
 instance_deactivate_object(inst_play);

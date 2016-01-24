@@ -21,13 +21,7 @@
     <sprites name="Other">
       <sprite>sprites\spr_indicator</sprite>
       <sprite>sprites\spr_coin</sprite>
-    </sprites>
-    <sprites name="Buttons">
       <sprite>sprites\spr_btn</sprite>
-      <sprite>sprites\spr_hard</sprite>
-      <sprite>sprites\spr_easy</sprite>
-      <sprite>sprites\spr_HTP</sprite>
-      <sprite>sprites\spr_start</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -93,19 +87,12 @@
     </objects>
     <objects name="Buttons">
       <object>objects\obj_btn</object>
-      <object>objects\obj_HTP_btn</object>
-      <object>objects\obj_start_btn</object>
-      <object>objects\obj_easy_btn</object>
-      <object>objects\obj_hard_btn</object>
       <object>objects\obj_btn_parent</object>
     </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_start</room>
-    <room>rooms\rm_starta</room>
     <room>rooms\rm_game</room>
-    <room>rooms\rm_gameOver</room>
-    <room>rooms\rm_HTP</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

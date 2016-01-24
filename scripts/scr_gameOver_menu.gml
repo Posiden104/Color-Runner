@@ -7,5 +7,8 @@ obj_player.vspeed = 0;
 with(obj_indicator) instance_destroy();
 
 instance_activate_object(obj_gameOver);
+instance_activate_object(obj_menu);
 instance_deactivate_object(obj_gen);
-script_execute(scr_menu);
+with(obj_menu) {
+    script_execute(scr_menu);
+}
