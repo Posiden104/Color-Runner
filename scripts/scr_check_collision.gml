@@ -10,8 +10,8 @@ if(inst.isFloor) {
     if(running) y = 323;
     exit;
 } else if(inst.solid) {
-    state = scr_gameOver_menu;
-    script_execute(state);
+    state = scr_dead;
+    script_execute(scr_gameOver_menu);
     exit;
 } else if(inst.isCoin) {
     obj_score.my_score += 1;

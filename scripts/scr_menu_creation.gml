@@ -34,18 +34,10 @@ with(inst_HTP) {
     xscale *= 1.2;
     yscale *= 1.2;
 }
-inst_back = instance_create(250, 300, obj_btn);
+inst_back = instance_create(room_width / 4, 300, obj_btn);
 with(inst_back){
     text = "Back";
     tgt = scr_menu;
 }
-/*
-inst_play = instance_create(450, 300, obj_btn);
-with(inst_play) {
-    text = "Start";
-    target = rm_game;
-    tgt = scr_game;
-}
-*/
+
 instance_deactivate_object(inst_back);
-instance_deactivate_object(inst_play);

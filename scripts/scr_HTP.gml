@@ -1,5 +1,4 @@
 ///scr_HTP  
-    show_debug_message(string(instance_exists(obj_menu)));
 with(obj_menu){
     instance_deactivate_object(inst_hard);
     instance_deactivate_object(inst_easy);
