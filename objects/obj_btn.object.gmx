@@ -3,8 +3,8 @@
   <spriteName>spr_btn</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>-50</depth>
-  <persistent>-1</persistent>
+  <depth>-199</depth>
+  <persistent>0</persistent>
   <parentName>obj_btn_parent</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>

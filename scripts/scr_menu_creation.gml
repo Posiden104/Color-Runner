@@ -1,4 +1,5 @@
 ///scr_menu_creation()
+
 inst_hard = instance_create(70, 300, obj_btn);
 with(inst_hard) {
     text = "Hard Mode";

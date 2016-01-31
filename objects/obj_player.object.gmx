@@ -3,7 +3,7 @@
   <spriteName>spr_player</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>-20</depth>
+  <depth>-11</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -117,6 +117,9 @@ jumpable = true;
           <argument>
             <kind>1</kind>
             <string>///Step event
+if(state = scr_dead) {
+    exit;
+}
 if(!running) vspeed += 0.6;
 if(running) y = 323;
 
@@ -141,8 +144,6 @@ if(switch_key &amp;&amp; switchable){
 scr_check_collision();
 
 if(running) y = 323;
-
-//obj_score.my_score += 0.03;
 </string>
           </argument>
         </arguments>
@@ -167,11 +168,11 @@ if(running) y = 323;
             <kind>1</kind>
             <string>///Draw Text
 if(!isDead){
-    var msg = "Score: " + string(round(obj_score.my_score));
+    var msg = "Score: " + string(obj_score.my_score);
     draw_set_color(c_white);
 
-    draw_text(view_xview[0] + 64, view_yview[0] + 15, msg);
-    draw_text(view_xview[0] + 64, view_yview[0] + 30, "Jumps" + string(jump));
+    draw_text_transformed(view_xview[0] + 64, view_yview[0] + 15, msg, .75, .75, 0);
+    draw_text_transformed(view_xview[0] + 64, view_yview[0] + 40, "Jumps: " + string(jump), .75, .75, 0);
 }
 draw_self();
 </string>

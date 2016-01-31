@@ -43,6 +43,7 @@
       <script>scripts\scr_next_color.gml</script>
       <script>scripts\scr_check_collision.gml</script>
       <script>scripts\scr_dead.gml</script>
+      <script>scripts\scr_update_score.gml</script>
     </scripts>
     <scripts name="Gen scripts">
       <script>scripts\scr_change_color.gml</script>

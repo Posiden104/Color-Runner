@@ -18,8 +18,6 @@ if(inst.isFloor) {
     with(inst) instance_destroy();
     exit;
 } else if(!inst.solid && !inst.touched) {
-    //jump--;
-    //if(jump < 0) jump = 0;
     jump = 0;
     inst.touched = true;
     if(running) y = 323;
