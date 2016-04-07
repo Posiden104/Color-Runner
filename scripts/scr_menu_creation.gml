@@ -41,4 +41,10 @@ with(inst_back){
     tgt = scr_menu;
 }
 
+inst_cred = instance_create(room_width / 4, 300, obj_btn);
+with(inst_back){
+    text = "Credits";
+    tgt = scr_credits;
+}
+
 instance_deactivate_object(inst_back);
