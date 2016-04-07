@@ -30,6 +30,8 @@ hspeed = -SPEED;
 isFloor = false;
 isCoin = false;
 touched = false;
+image_speed = 0;
+image_index = 0;
 </string>
           </argument>
         </arguments>

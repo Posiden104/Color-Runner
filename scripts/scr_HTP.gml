@@ -4,6 +4,7 @@ with(obj_menu){
     instance_deactivate_object(inst_easy);
     instance_deactivate_object(inst_start);
     instance_deactivate_object(inst_HTP);
+    instance_deactivate_object(inst_credits);
     
     
     instance_activate_object(inst_back);

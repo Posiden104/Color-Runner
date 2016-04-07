@@ -58,6 +58,7 @@
     <instance objName="obj_ceiling" x="0" y="0" name="inst_1A1561DA" locked="0" code="" scaleX="24" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_floor" x="0" y="352" name="inst_14772135" locked="0" code="" scaleX="24" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_HTP" x="0" y="160" name="inst_35AEA204" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_credits" x="0" y="192" name="inst_1D06F3CF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

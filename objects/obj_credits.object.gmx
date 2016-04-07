@@ -26,12 +26,19 @@
           <argument>
             <kind>1</kind>
             <string>///init
-txt_x = room_width / 2;
+txt_x = 341;
 txt_y = room_height / 2 - 100;
-msg_1 = "Credits
-Long Time Coming Kevin MacLeod (incompetech.com)
-Licensed under Creative Commons: By Attribution 3.0 License
-http://creativecommons.org/licenses/by/3.0/";
+txt_off = 25;
+msg_1 = "Credits"
+msg_programming = "Programming:";
+msg_joel = "Joel Van Auken"
+msg_music = "Music/Sound:";
+msg_2 = "Long Time Coming Kevin MacLeod (incompetech.com)";
+msg_3 = "Licensed under Creative Commons: By Attribution 3.0 License";
+msg_4 = "http://creativecommons.org/licenses/by/3.0/";
+msg_art = "Art:";
+msg_5 = "www.lonegames.net";
+msg_6 = "Jesús Lastra";
 </string>
           </argument>
         </arguments>
@@ -61,10 +68,41 @@ draw_set_valign(fa_middle);
 draw_set_font(fnt_1);
 draw_set_color(c_white);
 
+//CREDITS
 draw_text_transformed(txt_x, txt_y, msg_1, .75, .75, 0);
-//draw_text_transformed(txt_x, txt_y + 64, msg_2, .75, .75, 0);
-//draw_text_transformed(txt_x, txt_y + 128, msg_3, .75, .75, 0);
 
+//PROGRAMMING
+
+txt_off = 30;
+draw_text_transformed(txt_x, txt_y + txt_off, msg_programming, .50, .50, 0);
+//
+txt_off += 20;
+draw_text_transformed(txt_x, txt_y + txt_off, msg_joel, .30, .30, 0);
+
+//MUSIC
+txt_off += 30;
+draw_text_transformed(txt_x, txt_y + txt_off, msg_music, .50, .50, 0);
+//
+txt_off += 20;
+draw_text_transformed(txt_x, txt_y + txt_off, msg_2, .25, .25, 0);
+txt_off += 10;
+draw_text_transformed(txt_x, txt_y + txt_off, msg_3, .25, .25, 0);
+txt_off += 10;
+draw_text_transformed(txt_x, txt_y + txt_off, msg_4, .25, .25, 0);
+txt_off += 15;
+draw_text_transformed(txt_x, txt_y + txt_off, msg_6, .25, .25, 0);
+
+//ART
+txt_off += 30;
+draw_text_transformed(txt_x, txt_y + txt_off, msg_art, .50, .50, 0);
+//
+txt_off += 20;
+draw_text_transformed(txt_x, txt_y + txt_off, msg_joel, .30, .30, 0);
+
+txt_off += 15;
+draw_text_transformed(txt_x, txt_y + txt_off, msg_5, .25, .25, 0);
+
+txt_off += 15;
 </string>
           </argument>
         </arguments>

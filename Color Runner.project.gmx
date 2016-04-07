@@ -10,15 +10,16 @@
   <sounds name="sound">
     <sound>sound\snd_coin</sound>
     <sound>sound\snd_music</sound>
+    <sound>sound\snd_color</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="Player">
       <sprite>sprites\spr_player</sprite>
     </sprites>
     <sprites name="Wall Spr">
-      <sprite>sprites\spr_green</sprite>
-      <sprite>sprites\spr_red</sprite>
       <sprite>sprites\spr_blue</sprite>
+      <sprite>sprites\spr_red</sprite>
+      <sprite>sprites\spr_green</sprite>
       <sprite>sprites\spr_wall</sprite>
     </sprites>
     <sprites name="Other">

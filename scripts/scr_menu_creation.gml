@@ -41,10 +41,14 @@ with(inst_back){
     tgt = scr_menu;
 }
 
-inst_cred = instance_create(room_width / 4, 300, obj_btn);
-with(inst_back){
+inst_cred = instance_create(20, 340, obj_btn);
+with(inst_cred){
     text = "Credits";
     tgt = scr_credits;
+    image_xscale = 0.5;
+    image_yscale = 0.5;
+    xscale *= 0.5;
+    yscale *= 0.5;
 }
 
 instance_deactivate_object(inst_back);

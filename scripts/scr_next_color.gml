@@ -14,3 +14,4 @@ switch(state){
        state = scr_blue_state;
        break;
 }
+audio_play_sound(snd_color, 2, 0);

@@ -32,8 +32,10 @@ inst_start = -1;
 inst_HTP = -1;
 inst_back = -1;
 inst_play = -1;
+inst_credits = -1;
 isGameOver = false;
 instance_deactivate_object(obj_HTP);
+instance_deactivate_object(obj_credits);
 script_execute(scr_menu_creation);
 </string>
           </argument>
